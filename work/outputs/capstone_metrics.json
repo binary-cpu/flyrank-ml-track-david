@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "n_daily": 20266108,
+    "ga4_pct": 4.206382480177065,
+    "n_items": 101441,
+    "n_clients": 44,
+    "base_rate": 0.5174633530820871
+  },
+  "split": {
+    "test_clients": 11,
+    "test_rows": 8356,
+    "test_base": 0.48372426998563905
+  },
+  "results": {
+    "Week-4 rule (stale + visible)": {
+      "auc": 0.5,
+      "p50": 0.28,
+      "p500": 0.32
+    },
+    "Simple rule (lowest CTR first)": {
+      "auc": 0.6123380960278687,
+      "p50": 0.42,
+      "p500": 0.404
+    },
+    "Logistic Regression": {
+      "auc": 0.6476980692070303,
+      "p50": 0.38,
+      "p500": 0.624
+    },
+    "Random Forest": {
+      "auc": 0.6725788297975568,
+      "p50": 0.64,
+      "p500": 0.61
+    }
+  },
+  "cv_auc": {
+    "Week-4 rule (stale + visible)": [
+      0.5000522155255598,
+      7.530304928785488e-05
+    ],
+    "Simple rule (lowest CTR first)": [
+      0.5994994531334343,
+      0.010086108653484272
+    ],
+    "Logistic Regression": [
+      0.645571124699275,
+      0.010958122921140104
+    ],
+    "Random Forest": [
+      0.6416627633571123,
+      0.01835072537554395
+    ]
+  },
+  "audit": {
+    "random": 0.6752332018636646,
+    "grouped": 0.6725788297975568,
+    "leak": 0.9171616211664817
+  },
+  "limits": {
+    "unk_stale": 82.24090850839404,
+    "zero_ctr": 37.242337910706716,
+    "modal_days": 4,
+    "modal_pct": 96.16430752150985
+  },
+  "tiers": {
+    "stable": 91296,
+    "low_ctr_high_risk": 8562,
+    "high_risk_unclear_cause": 1582,
+    "stale_high_risk": 1
+  },
+  "value": {
+    "p500": 0.616,
+    "base": 0.5174633530820871,
+    "extra": 49.26832345895643,
+    "wasted": 192.0
+  },
+  "importance": {
+    "ctr": 0.3768,
+    "active_days": 0.3298,
+    "imp_march": 0.1257,
+    "pos_march": 0.0899,
+    "days_f": 0.0435,
+    "stale_unknown": 0.0343
+  },
+  "feature_month": "2026-03",
+  "outcome_month": "2026-04"
+}
